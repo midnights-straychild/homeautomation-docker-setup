@@ -1,1 +1,1 @@
-docker run -d --network homeautomation --restart unless-stopped --name arantia-tasks -p 8100:80 -v /srv/taskboard/taskboard.db:/var/www/html/api/taskboard.db rubmorgade/taskboard
+docker run --log-opt max-size=10m --log-opt max-file=5  -d --network homeautomation --restart unless-stopped --name arantia-tasks -p 8100:80 -v /srv/taskboard/taskboard.db:/var/www/html/api/taskboard.db rubmorgade/taskboard
