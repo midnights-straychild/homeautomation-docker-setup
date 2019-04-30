@@ -1,0 +1,1 @@
+docker run -d --name influxdb -p 8086:8086 --ip 172.18.0.6 --network homeautomation --restart always -v /srv/influxdb/data:/var/lib/influxdb -v /srv/influxdb/config/influxdb.conf:/etc/influxdb/influxdb.conf:ro influxdb

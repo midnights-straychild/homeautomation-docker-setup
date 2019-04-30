@@ -1,0 +1,1 @@
+docker run -d --network homeautomation -v /srv/zigbee2mqtt:/app/data --device=/dev/ttyACM0 --restart always --name zigbee2mqtt koenkk/zigbee2mqtt:latest

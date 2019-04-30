@@ -1,0 +1,1 @@
+docker run -d -p 8125:8125 -p 8092:8092 -p 8094:8094 --ip 172.18.0.8 --network homeautomation --restart always --name telegraf -v /srv/telegraf/config/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
